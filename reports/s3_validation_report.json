@@ -1,0 +1,52 @@
+{
+  "source": "Amazon S3",
+  "bucket": "workforceiq-ai-data-2026",
+  "region": "ap-south-1",
+  "status": "PASS",
+  "datasets": {
+    "departments": {
+      "file": "departments.csv",
+      "rows": 8,
+      "columns": 3,
+      "missing_cells": 0
+    },
+    "roles": {
+      "file": "roles.csv",
+      "rows": 24,
+      "columns": 4,
+      "missing_cells": 0
+    },
+    "kpi_definitions": {
+      "file": "kpi_definitions.csv",
+      "rows": 40,
+      "columns": 8,
+      "missing_cells": 0
+    },
+    "kpi_targets": {
+      "file": "kpi_targets.csv",
+      "rows": 120,
+      "columns": 8,
+      "missing_cells": 120
+    },
+    "employees": {
+      "file": "employees.csv",
+      "rows": 720,
+      "columns": 12,
+      "missing_cells": 0
+    },
+    "performance_records": {
+      "file": "performance_records_curated.csv",
+      "rows": 40250,
+      "columns": 14,
+      "missing_cells": 0
+    }
+  },
+  "total_rows": 41162,
+  "business_checks_passed": 25,
+  "business_checks_failed": 0,
+  "records_reconciled": 40250,
+  "score_mismatches": 0,
+  "incomparable_records": 0,
+  "duration_seconds": 3.04,
+  "error": null
+}

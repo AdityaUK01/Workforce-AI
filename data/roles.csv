@@ -1,0 +1,25 @@
+role_id,department_name,role_name,role_level
+R001,Sales,Sales Representative,Individual Contributor
+R002,Sales,Account Executive,Individual Contributor
+R003,Sales,Sales Manager,People Manager
+R004,Marketing,Marketing Specialist,Individual Contributor
+R005,Marketing,Campaign Manager,Individual Contributor
+R006,Marketing,Marketing Analyst,Individual Contributor
+R007,Engineering,Software Engineer,Individual Contributor
+R008,Engineering,QA Engineer,Individual Contributor
+R009,Engineering,Engineering Manager,Individual Contributor
+R010,Customer Support,Support Specialist,Individual Contributor
+R011,Customer Support,Support Team Lead,Individual Contributor
+R012,Customer Support,Customer Success Manager,Individual Contributor
+R013,Finance,Financial Analyst,Individual Contributor
+R014,Finance,Accountant,Individual Contributor
+R015,Finance,Finance Manager,Individual Contributor
+R016,Human Resources,Recruiter,Individual Contributor
+R017,Human Resources,HR Generalist,Individual Contributor
+R018,Human Resources,HR Manager,Individual Contributor
+R019,Operations,Operations Associate,Individual Contributor
+R020,Operations,Process Analyst,Individual Contributor
+R021,Operations,Operations Manager,People Manager
+R022,Product,Product Analyst,Individual Contributor
+R023,Product,Product Manager,Individual Contributor
+R024,Product,UX Researcher,Individual Contributor

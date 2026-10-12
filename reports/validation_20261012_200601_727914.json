@@ -1,0 +1,57 @@
+{
+  "project": "WorkforceIQ AI",
+  "run_timestamp": "2026-10-12T20:06:01.727914+05:30",
+  "status": "PASS",
+  "mode": "CSV validation only; MySQL not modified",
+  "datasets": {
+    "departments": {
+      "file": "departments.csv",
+      "rows": 8,
+      "columns": 3,
+      "missing_cells": 0
+    },
+    "roles": {
+      "file": "roles.csv",
+      "rows": 24,
+      "columns": 4,
+      "missing_cells": 0
+    },
+    "kpi_definitions": {
+      "file": "kpi_definitions.csv",
+      "rows": 40,
+      "columns": 8,
+      "missing_cells": 0
+    },
+    "kpi_targets": {
+      "file": "kpi_targets.csv",
+      "rows": 120,
+      "columns": 8,
+      "missing_cells": 120
+    },
+    "employees": {
+      "file": "employees.csv",
+      "rows": 720,
+      "columns": 12,
+      "missing_cells": 0
+    },
+    "performance_records": {
+      "file": "performance_records_curated.csv",
+      "rows": 40250,
+      "columns": 14,
+      "missing_cells": 0
+    }
+  },
+  "total_rows_inspected": 41162,
+  "business_checks": {
+    "passed": 25,
+    "failed": 0,
+    "total": 25
+  },
+  "kpi_reconciliation": {
+    "records_reconciled": 40250,
+    "score_mismatches": 0,
+    "incomparable_records": 0
+  },
+  "duration_seconds": 0.156,
+  "error": null
+}

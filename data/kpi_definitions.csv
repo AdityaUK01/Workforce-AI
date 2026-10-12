@@ -1,0 +1,41 @@
+kpi_id,department_name,kpi_name,kpi_category,unit,better_direction,default_target,measurement_frequency
+K001,Sales,Revenue attainment,Target Achievement,percent,higher,100.0,Monthly
+K002,Sales,Qualified leads converted,Productivity,count,higher,18.0,Monthly
+K003,Sales,Customer satisfaction,Quality,score_100,higher,85.0,Monthly
+K004,Sales,Sales cycle duration,Timeliness,days,lower,24.0,Monthly
+K005,Sales,CRM data completeness,Quality,percent,higher,95.0,Monthly
+K006,Marketing,Campaign ROI,Productivity,ratio,higher,3.0,Monthly
+K007,Marketing,Marketing qualified leads,Productivity,count,higher,120.0,Monthly
+K008,Marketing,Lead conversion rate,Target Achievement,percent,higher,8.0,Monthly
+K009,Marketing,Campaign delivery on time,Timeliness,percent,higher,95.0,Monthly
+K010,Marketing,Campaign data accuracy,Quality,percent,higher,97.0,Monthly
+K011,Engineering,Sprint commitment completion,Productivity,percent,higher,90.0,Monthly
+K012,Engineering,Defect escape rate,Quality,percent,lower,4.0,Monthly
+K013,Engineering,Code review turnaround,Timeliness,hours,lower,24.0,Monthly
+K014,Engineering,Automated test coverage,Quality,percent,higher,80.0,Monthly
+K015,Engineering,Incident resolution time,Timeliness,hours,lower,8.0,Monthly
+K016,Customer Support,Tickets resolved,Productivity,count,higher,320.0,Monthly
+K017,Customer Support,Customer satisfaction,Quality,score_100,higher,88.0,Monthly
+K018,Customer Support,First contact resolution,Quality,percent,higher,75.0,Monthly
+K019,Customer Support,SLA compliance,Timeliness,percent,higher,95.0,Monthly
+K020,Customer Support,Average response time,Timeliness,minutes,lower,20.0,Monthly
+K021,Finance,Reporting accuracy,Quality,percent,higher,98.0,Monthly
+K022,Finance,Close cycle duration,Timeliness,days,lower,6.0,Monthly
+K023,Finance,Reconciliations completed,Productivity,count,higher,140.0,Monthly
+K024,Finance,Forecast variance,Quality,percent,lower,5.0,Monthly
+K025,Finance,Policy compliance,Quality,percent,higher,99.0,Monthly
+K026,Human Resources,Time to fill,Timeliness,days,lower,35.0,Monthly
+K027,Human Resources,Hiring plan attainment,Target Achievement,percent,higher,90.0,Monthly
+K028,Human Resources,Onboarding completion,Quality,percent,higher,98.0,Monthly
+K029,Human Resources,Training completion,Development,percent,higher,95.0,Monthly
+K030,Human Resources,Hiring manager satisfaction,Quality,score_100,higher,85.0,Monthly
+K031,Operations,Orders processed,Productivity,count,higher,1800.0,Monthly
+K032,Operations,Processing accuracy,Quality,percent,higher,98.0,Monthly
+K033,Operations,On-time processing,Timeliness,percent,higher,96.0,Monthly
+K034,Operations,Cost per transaction,Efficiency,currency_usd,lower,2.5,Monthly
+K035,Operations,SLA compliance,Timeliness,percent,higher,97.0,Monthly
+K036,Product,Roadmap milestone completion,Productivity,percent,higher,90.0,Monthly
+K037,Product,Feature adoption,Target Achievement,percent,higher,35.0,Monthly
+K038,Product,Research insight delivery,Productivity,count,higher,12.0,Monthly
+K039,Product,Product defect rate,Quality,percent,lower,3.0,Monthly
+K040,Product,Stakeholder satisfaction,Quality,score_100,higher,85.0,Monthly

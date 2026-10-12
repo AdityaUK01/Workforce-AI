@@ -1,0 +1,106 @@
+2026-10-12 18:35:13,462 | INFO | ============================================================
+2026-10-12 18:35:13,462 | INFO | WorkforceIQ AI pipeline started
+2026-10-12 18:35:13,462 | INFO | Pipeline completed successfully
+2026-10-12 18:35:13,462 | INFO | ============================================================
+2026-10-12 18:36:51,191 | INFO | ============================================================
+2026-10-12 18:36:51,191 | INFO | WorkforceIQ AI pipeline started
+2026-10-12 18:36:51,191 | INFO | Pipeline completed successfully
+2026-10-12 18:36:51,191 | INFO | ============================================================
+2026-10-12 18:38:02,499 | INFO | ============================================================
+2026-10-12 18:38:02,500 | INFO | WorkforceIQ AI pipeline started
+2026-10-12 18:38:13,921 | INFO | package: mysql.connector.plugins
+2026-10-12 18:38:13,922 | INFO | plugin_name: caching_sha2_password
+2026-10-12 18:38:13,922 | INFO | AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-10-12 18:38:14,037 | ERROR | Pipeline failed: Table departments already has 8 rows. Stop and decide whether to reload or preserve them.
+Traceback (most recent call last):
+  File "C:\Users\adity\Downloads\WorkforceIQ AI\pipeline.py", line 18, in main
+    load_data_main()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\adity\Downloads\WorkforceIQ AI\load_data.py", line 111, in main
+    raise RuntimeError(
+    ...<2 lines>...
+    )
+RuntimeError: Table departments already has 8 rows. Stop and decide whether to reload or preserve them.
+2026-10-12 18:38:14,039 | INFO | ============================================================
+2026-10-12 18:38:48,726 | INFO | ============================================================
+2026-10-12 18:38:48,727 | INFO | WorkforceIQ AI pipeline started
+2026-10-12 18:38:48,727 | ERROR | Pipeline failed: Database loading is disabled in this pipeline version. Use --validate-only until safe loading is configured.
+Traceback (most recent call last):
+  File "c:\Users\adity\Downloads\WorkforceIQ AI\pipeline.py", line 77, in main
+    raise RuntimeError(
+    ...<2 lines>...
+    )
+RuntimeError: Database loading is disabled in this pipeline version. Use --validate-only until safe loading is configured.
+2026-10-12 18:38:48,728 | INFO | ============================================================
+2026-10-12 18:39:07,766 | INFO | ============================================================
+2026-10-12 18:39:07,766 | INFO | WorkforceIQ AI pipeline started
+2026-10-12 18:39:07,940 | INFO | Pipeline completed successfully
+2026-10-12 18:39:07,940 | INFO | ============================================================
+2026-10-12 18:41:34,418 | INFO | ============================================================
+2026-10-12 18:41:34,418 | INFO | WorkforceIQ AI pipeline started
+2026-10-12 18:41:34,607 | INFO | Pipeline completed successfully
+2026-10-12 18:41:34,607 | INFO | ============================================================
+2026-10-12 18:43:38,042 | INFO | ============================================================
+2026-10-12 18:43:38,042 | INFO | WorkforceIQ AI pipeline started
+2026-10-12 18:43:38,053 | ERROR | Pipeline failed: departments.csv is missing columns: ['d', 'e', 'p', 'a', 'r', 't', 'm', 'e', 'n', 't', '_', 'i', 'd']
+Traceback (most recent call last):
+  File "C:\Users\adity\Downloads\WorkforceIQ AI\pipeline.py", line 322, in main
+    data = load_csv_files()
+  File "C:\Users\adity\Downloads\WorkforceIQ AI\pipeline.py", line 67, in load_csv_files
+    raise ValueError(
+        f"{filename} is missing columns: {missing_key_columns}"
+    )
+ValueError: departments.csv is missing columns: ['d', 'e', 'p', 'a', 'r', 't', 'm', 'e', 'n', 't', '_', 'i', 'd']
+2026-10-12 18:43:38,055 | INFO | ============================================================
+2026-10-12 18:45:21,696 | INFO | ============================================================
+2026-10-12 18:45:21,696 | INFO | WorkforceIQ AI pipeline started
+2026-10-12 18:45:21,947 | INFO | Pipeline completed successfully
+2026-10-12 18:45:21,947 | INFO | ============================================================
+2026-10-12 18:46:45,532 | INFO | ============================================================
+2026-10-12 18:46:45,532 | INFO | WorkforceIQ AI pipeline started
+2026-10-12 18:46:45,870 | ERROR | Pipeline failed: KPI achievement reconciliation failed. Inspect the diagnostic rows above before changing any data.
+Traceback (most recent call last):
+  File "C:\Users\adity\Downloads\WorkforceIQ AI\pipeline.py", line 488, in main
+    reconcile_achievement_scores(data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\adity\Downloads\WorkforceIQ AI\pipeline.py", line 455, in reconcile_achievement_scores
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: KPI achievement reconciliation failed. Inspect the diagnostic rows above before changing any data.
+2026-10-12 18:46:45,871 | INFO | ============================================================
+2026-10-12 18:48:35,333 | INFO | ============================================================
+2026-10-12 18:48:35,334 | INFO | WorkforceIQ AI pipeline started
+2026-10-12 18:48:35,572 | INFO | Pipeline completed successfully
+2026-10-12 18:48:35,572 | INFO | ============================================================
+2026-10-12 18:53:28,281 | INFO | ============================================================
+2026-10-12 18:53:28,281 | INFO | WorkforceIQ AI pipeline started
+2026-10-12 18:53:28,495 | INFO | Pipeline completed successfully
+2026-10-12 18:53:28,495 | INFO | ============================================================
+2026-10-12 20:00:40,235 | INFO | ============================================================
+2026-10-12 20:00:40,236 | INFO | WorkforceIQ AI pipeline started
+2026-10-12 20:00:40,457 | INFO | Pipeline completed successfully
+2026-10-12 20:00:40,458 | INFO | ============================================================
+2026-10-12 20:03:46,903 | INFO | ============================================================
+2026-10-12 20:03:46,903 | INFO | WorkforceIQ AI pipeline started
+2026-10-12 20:03:46,904 | ERROR | Pipeline failed: Safe mode: database loading is disabled. Run with --validate-only.
+Traceback (most recent call last):
+  File "C:\Users\adity\Downloads\WorkforceIQ AI\pipeline.py", line 607, in main
+    raise RuntimeError(
+    ...<2 lines>...
+    )
+RuntimeError: Safe mode: database loading is disabled. Run with --validate-only.
+2026-10-12 20:03:46,904 | INFO | ============================================================
+2026-10-12 20:06:01,571 | INFO | ============================================================
+2026-10-12 20:06:01,572 | INFO | WorkforceIQ AI pipeline started
+2026-10-12 20:06:01,727 | INFO | Pipeline completed successfully
+2026-10-12 20:06:01,727 | INFO | ============================================================
+2026-10-12 20:06:17,570 | INFO | ============================================================
+2026-10-12 20:06:17,571 | INFO | WorkforceIQ AI pipeline started
+2026-10-12 20:06:17,746 | INFO | Pipeline completed successfully
+2026-10-12 20:06:17,746 | INFO | ============================================================
+2026-10-12 20:07:28,194 | INFO | ============================================================
+2026-10-12 20:07:28,194 | INFO | WorkforceIQ AI pipeline started
+2026-10-12 20:07:28,353 | INFO | Pipeline completed successfully
+2026-10-12 20:07:28,353 | INFO | ============================================================
+2026-10-12 20:48:37,234 | INFO | Found credentials in shared credentials file: ~/.aws/credentials

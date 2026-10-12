@@ -1,0 +1,82 @@
+{
+  "project": "WorkforceIQ AI",
+  "report_type": "Data Quality Summary",
+  "generated_at": "2026-10-12T20:02:22.718360+05:30",
+  "overall_status": "PASS",
+  "summary": {
+    "datasets_inspected": 6,
+    "datasets_failed": 0,
+    "total_rows": 41162,
+    "total_missing_cells": 120,
+    "total_duplicate_rows": 0
+  },
+  "datasets": {
+    "departments": {
+      "file": "departments.csv",
+      "status": "PASS",
+      "rows": 8,
+      "columns": 3,
+      "duplicate_rows": 0,
+      "missing_cells": 0,
+      "missing_by_column": {},
+      "memory_usage_mb": 0.001
+    },
+    "roles": {
+      "file": "roles.csv",
+      "status": "PASS",
+      "rows": 24,
+      "columns": 4,
+      "duplicate_rows": 0,
+      "missing_cells": 0,
+      "missing_by_column": {},
+      "memory_usage_mb": 0.006
+    },
+    "kpi_definitions": {
+      "file": "kpi_definitions.csv",
+      "status": "PASS",
+      "rows": 40,
+      "columns": 8,
+      "duplicate_rows": 0,
+      "missing_cells": 0,
+      "missing_by_column": {},
+      "memory_usage_mb": 0.016
+    },
+    "kpi_targets": {
+      "file": "kpi_targets.csv",
+      "status": "PASS",
+      "rows": 120,
+      "columns": 8,
+      "duplicate_rows": 0,
+      "missing_cells": 120,
+      "missing_by_column": {
+        "effective_to": 120
+      },
+      "memory_usage_mb": 0.035
+    },
+    "employees": {
+      "file": "employees.csv",
+      "status": "PASS",
+      "rows": 720,
+      "columns": 12,
+      "duplicate_rows": 0,
+      "missing_cells": 0,
+      "missing_by_column": {},
+      "memory_usage_mb": 0.431
+    },
+    "performance_records": {
+      "file": "performance_records_curated.csv",
+      "status": "PASS",
+      "rows": 40250,
+      "columns": 14,
+      "duplicate_rows": 0,
+      "missing_cells": 0,
+      "missing_by_column": {},
+      "memory_usage_mb": 22.512
+    }
+  },
+  "notes": [
+    "Missing cells are reported, not automatically treated as errors.",
+    "Blank effective_to values in KPI targets may be intentional.",
+    "Duplicate rows are exact full-row duplicates."
+  ]
+}

@@ -1,0 +1,401 @@
+2026-10-12 20:03:46,206 | INFO | WorkforceIQ AI orchestration started at 2026-10-12T20:03:46.206404+05:30
+2026-10-12 20:03:46,207 | INFO | ============================================================
+2026-10-12 20:03:46,207 | INFO | STARTING: Structural and business validation
+2026-10-12 20:03:47,001 | INFO | Structural and business validation output captured.
+2026-10-12 20:03:47,002 | WARNING | Structural and business validation produced stderr output.
+2026-10-12 20:03:47,002 | ERROR | Structural and business validation FAILED with exit code 1
+2026-10-12 20:03:47,002 | INFO | ============================================================
+2026-10-12 20:03:47,004 | INFO | STARTING: Data quality summary
+2026-10-12 20:03:47,954 | INFO | Data quality summary output captured.
+2026-10-12 20:03:47,954 | INFO | Data quality summary PASSED
+2026-10-12 20:03:47,954 | INFO | ============================================================
+2026-10-12 20:03:47,954 | INFO | FINAL PIPELINE SUMMARY
+2026-10-12 20:03:47,955 | INFO | Structural and business validation: FAIL
+2026-10-12 20:03:47,955 | INFO | Data quality summary: PASS
+2026-10-12 20:03:47,955 | INFO | Duration: 1.75 seconds
+2026-10-12 20:03:47,955 | INFO | Log file: C:\Users\adity\Downloads\WorkforceIQ AI\logs\orchestrator.log
+2026-10-12 20:03:47,955 | INFO | FINAL STATUS: FAILED
+2026-10-12 20:06:00,928 | INFO | WorkforceIQ AI orchestration started at 2026-10-12T20:06:00.928239+05:30
+2026-10-12 20:06:00,928 | INFO | ============================================================
+2026-10-12 20:06:00,929 | INFO | STARTING: Structural and business validation
+2026-10-12 20:06:00,929 | INFO | Command: C:\Users\adity\AppData\Local\Programs\Python\Python313\python.exe C:\Users\adity\Downloads\WorkforceIQ AI\pipeline.py --validate-only
+2026-10-12 20:06:01,820 | INFO | Structural and business validation standard output:
+
+Dataset: departments
+  File: departments.csv
+  Rows: 8
+  Columns: 3
+  Missing cells: 0
+  Duplicate rows: 0
+
+Dataset: roles
+  File: roles.csv
+  Rows: 24
+  Columns: 4
+  Missing cells: 0
+  Duplicate rows: 0
+
+Dataset: kpi_definitions
+  File: kpi_definitions.csv
+  Rows: 40
+  Columns: 8
+  Missing cells: 0
+  Duplicate rows: 0
+
+Dataset: kpi_targets
+  File: kpi_targets.csv
+  Rows: 120
+  Columns: 8
+  Missing cells: 120
+  Duplicate rows: 0
+
+Dataset: employees
+  File: employees.csv
+  Rows: 720
+  Columns: 12
+  Missing cells: 0
+  Duplicate rows: 0
+
+Dataset: performance_records
+  File: performance_records_curated.csv
+  Rows: 40,250
+  Columns: 14
+  Missing cells: 0
+  Duplicate rows: 0
+
+CSV structural validation completed.
+Total rows inspected: 41,162
+[PASS] departments primary key: 0 missing key values; 0 rows with repeated key values
+[PASS] roles primary key: 0 missing key values; 0 rows with repeated key values
+[PASS] kpi_definitions primary key: 0 missing key values; 0 rows with repeated key values
+[PASS] kpi_targets primary key: 0 missing key values; 0 rows with repeated key values
+[PASS] employees primary key: 0 missing key values; 0 rows with repeated key values
+[PASS] performance_records primary key: 0 missing key values; 0 rows with repeated key values
+[PASS] KPI target values: 0 missing, non-numeric, or non-positive values
+[PASS] Performance target_value: 0 missing, non-numeric, or invalid values
+[PASS] Performance actual_value: 0 missing, non-numeric, or invalid values
+[PASS] Performance achievement_pct: 0 missing, non-numeric, or invalid values
+[PASS] KPI scoring directions: 0 values outside higher/lower
+[PASS] KPI target start dates: 0 missing or invalid start dates
+[PASS] KPI target end dates: 0 invalid end dates; 0 end dates before start dates
+[PASS] Employee department IDs: 0 unmatched or missing values
+[PASS] Employee role IDs: 0 unmatched or missing values
+[PASS] Role department names: 0 unmatched or missing values
+[PASS] KPI department names: 0 unmatched or missing values
+[PASS] Target role IDs: 0 unmatched or missing values
+[PASS] Target KPI IDs: 0 unmatched or missing values
+[PASS] Performance employee IDs: 0 unmatched or missing values
+[PASS] Performance department IDs: 0 unmatched or missing values
+[PASS] Performance role IDs: 0 unmatched or missing values
+[PASS] Performance KPI IDs: 0 unmatched or missing values
+[PASS] Employee manager IDs: 0 references to unknown employees
+[PASS] Performance reporting months: 0 missing or invalid dates
+
+=======================================================
+Business checks passed: 25/25
+Business checks failed: 0
+
+=======================================================
+KPI ACHIEVEMENT RECONCILIATION
+Rows in dataset: 40,250
+Rows compared: 40,250
+Score mismatches: 0
+Rows not safely comparable: 0
+Achievement cap: 150.0%
+Allowed difference: 0.02 percentage points
+[PASS] KPI achievement reconciliation: 0 mismatches; 0 rows not safely comparable
+
+Execution time: 0.16 seconds
+
+Validation report saved: C:\Users\adity\Downloads\WorkforceIQ AI\reports\validation_20261012_200601_727914.json
+2026-10-12 20:06:01,820 | WARNING | Structural and business validation standard error:
+2026-10-12 20:06:01,571 | INFO | ============================================================
+2026-10-12 20:06:01,572 | INFO | WorkforceIQ AI pipeline started
+2026-10-12 20:06:01,727 | INFO | Pipeline completed successfully
+2026-10-12 20:06:01,727 | INFO | ============================================================
+2026-10-12 20:06:01,821 | ERROR | Structural and business validation did not confirm all required checks. Missing output markers: Pipeline completed successfully
+2026-10-12 20:06:01,821 | ERROR | Stopping orchestration because 'Structural and business validation' failed.
+2026-10-12 20:06:01,821 | INFO | ============================================================
+2026-10-12 20:06:01,821 | INFO | FINAL PIPELINE SUMMARY
+2026-10-12 20:06:01,821 | INFO | Structural and business validation: FAIL
+2026-10-12 20:06:01,821 | INFO | Duration: 0.89 seconds
+2026-10-12 20:06:01,821 | INFO | Log file: C:\Users\adity\Downloads\WorkforceIQ AI\logs\orchestrator.log
+2026-10-12 20:06:01,822 | INFO | FINAL STATUS: FAILED
+2026-10-12 20:06:16,886 | INFO | WorkforceIQ AI orchestration started at 2026-10-12T20:06:16.886386+05:30
+2026-10-12 20:06:16,886 | INFO | ============================================================
+2026-10-12 20:06:16,886 | INFO | STARTING: Structural and business validation
+2026-10-12 20:06:16,887 | INFO | Command: C:\Users\adity\AppData\Local\Programs\Python\Python313\python.exe C:\Users\adity\Downloads\WorkforceIQ AI\pipeline.py --validate-only
+2026-10-12 20:06:17,827 | INFO | Structural and business validation standard output:
+
+Dataset: departments
+  File: departments.csv
+  Rows: 8
+  Columns: 3
+  Missing cells: 0
+  Duplicate rows: 0
+
+Dataset: roles
+  File: roles.csv
+  Rows: 24
+  Columns: 4
+  Missing cells: 0
+  Duplicate rows: 0
+
+Dataset: kpi_definitions
+  File: kpi_definitions.csv
+  Rows: 40
+  Columns: 8
+  Missing cells: 0
+  Duplicate rows: 0
+
+Dataset: kpi_targets
+  File: kpi_targets.csv
+  Rows: 120
+  Columns: 8
+  Missing cells: 120
+  Duplicate rows: 0
+
+Dataset: employees
+  File: employees.csv
+  Rows: 720
+  Columns: 12
+  Missing cells: 0
+  Duplicate rows: 0
+
+Dataset: performance_records
+  File: performance_records_curated.csv
+  Rows: 40,250
+  Columns: 14
+  Missing cells: 0
+  Duplicate rows: 0
+
+CSV structural validation completed.
+Total rows inspected: 41,162
+[PASS] departments primary key: 0 missing key values; 0 rows with repeated key values
+[PASS] roles primary key: 0 missing key values; 0 rows with repeated key values
+[PASS] kpi_definitions primary key: 0 missing key values; 0 rows with repeated key values
+[PASS] kpi_targets primary key: 0 missing key values; 0 rows with repeated key values
+[PASS] employees primary key: 0 missing key values; 0 rows with repeated key values
+[PASS] performance_records primary key: 0 missing key values; 0 rows with repeated key values
+[PASS] KPI target values: 0 missing, non-numeric, or non-positive values
+[PASS] Performance target_value: 0 missing, non-numeric, or invalid values
+[PASS] Performance actual_value: 0 missing, non-numeric, or invalid values
+[PASS] Performance achievement_pct: 0 missing, non-numeric, or invalid values
+[PASS] KPI scoring directions: 0 values outside higher/lower
+[PASS] KPI target start dates: 0 missing or invalid start dates
+[PASS] KPI target end dates: 0 invalid end dates; 0 end dates before start dates
+[PASS] Employee department IDs: 0 unmatched or missing values
+[PASS] Employee role IDs: 0 unmatched or missing values
+[PASS] Role department names: 0 unmatched or missing values
+[PASS] KPI department names: 0 unmatched or missing values
+[PASS] Target role IDs: 0 unmatched or missing values
+[PASS] Target KPI IDs: 0 unmatched or missing values
+[PASS] Performance employee IDs: 0 unmatched or missing values
+[PASS] Performance department IDs: 0 unmatched or missing values
+[PASS] Performance role IDs: 0 unmatched or missing values
+[PASS] Performance KPI IDs: 0 unmatched or missing values
+[PASS] Employee manager IDs: 0 references to unknown employees
+[PASS] Performance reporting months: 0 missing or invalid dates
+
+=======================================================
+Business checks passed: 25/25
+Business checks failed: 0
+
+=======================================================
+KPI ACHIEVEMENT RECONCILIATION
+Rows in dataset: 40,250
+Rows compared: 40,250
+Score mismatches: 0
+Rows not safely comparable: 0
+Achievement cap: 150.0%
+Allowed difference: 0.02 percentage points
+[PASS] KPI achievement reconciliation: 0 mismatches; 0 rows not safely comparable
+
+Execution time: 0.18 seconds
+
+Validation report saved: C:\Users\adity\Downloads\WorkforceIQ AI\reports\validation_20261012_200617_746939.json
+2026-10-12 20:06:17,827 | WARNING | Structural and business validation standard error:
+2026-10-12 20:06:17,570 | INFO | ============================================================
+2026-10-12 20:06:17,571 | INFO | WorkforceIQ AI pipeline started
+2026-10-12 20:06:17,746 | INFO | Pipeline completed successfully
+2026-10-12 20:06:17,746 | INFO | ============================================================
+2026-10-12 20:06:17,827 | ERROR | Structural and business validation did not confirm all required checks. Missing output markers: Pipeline completed successfully
+2026-10-12 20:06:17,828 | ERROR | Stopping orchestration because 'Structural and business validation' failed.
+2026-10-12 20:06:17,828 | INFO | ============================================================
+2026-10-12 20:06:17,828 | INFO | FINAL PIPELINE SUMMARY
+2026-10-12 20:06:17,828 | INFO | Structural and business validation: FAIL
+2026-10-12 20:06:17,828 | INFO | Duration: 0.94 seconds
+2026-10-12 20:06:17,828 | INFO | Log file: C:\Users\adity\Downloads\WorkforceIQ AI\logs\orchestrator.log
+2026-10-12 20:06:17,828 | INFO | FINAL STATUS: FAILED
+2026-10-12 20:07:27,546 | INFO | WorkforceIQ AI orchestration started at 2026-10-12T20:07:27.546072+05:30
+2026-10-12 20:07:27,546 | INFO | ============================================================
+2026-10-12 20:07:27,546 | INFO | STARTING: Structural and business validation
+2026-10-12 20:07:27,546 | INFO | Command: C:\Users\adity\AppData\Local\Programs\Python\Python313\python.exe "C:\Users\adity\Downloads\WorkforceIQ AI\pipeline.py" --validate-only
+2026-10-12 20:07:28,439 | INFO | Structural and business validation stdout:
+
+Dataset: departments
+  File: departments.csv
+  Rows: 8
+  Columns: 3
+  Missing cells: 0
+  Duplicate rows: 0
+
+Dataset: roles
+  File: roles.csv
+  Rows: 24
+  Columns: 4
+  Missing cells: 0
+  Duplicate rows: 0
+
+Dataset: kpi_definitions
+  File: kpi_definitions.csv
+  Rows: 40
+  Columns: 8
+  Missing cells: 0
+  Duplicate rows: 0
+
+Dataset: kpi_targets
+  File: kpi_targets.csv
+  Rows: 120
+  Columns: 8
+  Missing cells: 120
+  Duplicate rows: 0
+
+Dataset: employees
+  File: employees.csv
+  Rows: 720
+  Columns: 12
+  Missing cells: 0
+  Duplicate rows: 0
+
+Dataset: performance_records
+  File: performance_records_curated.csv
+  Rows: 40,250
+  Columns: 14
+  Missing cells: 0
+  Duplicate rows: 0
+
+CSV structural validation completed.
+Total rows inspected: 41,162
+[PASS] departments primary key: 0 missing key values; 0 rows with repeated key values
+[PASS] roles primary key: 0 missing key values; 0 rows with repeated key values
+[PASS] kpi_definitions primary key: 0 missing key values; 0 rows with repeated key values
+[PASS] kpi_targets primary key: 0 missing key values; 0 rows with repeated key values
+[PASS] employees primary key: 0 missing key values; 0 rows with repeated key values
+[PASS] performance_records primary key: 0 missing key values; 0 rows with repeated key values
+[PASS] KPI target values: 0 missing, non-numeric, or non-positive values
+[PASS] Performance target_value: 0 missing, non-numeric, or invalid values
+[PASS] Performance actual_value: 0 missing, non-numeric, or invalid values
+[PASS] Performance achievement_pct: 0 missing, non-numeric, or invalid values
+[PASS] KPI scoring directions: 0 values outside higher/lower
+[PASS] KPI target start dates: 0 missing or invalid start dates
+[PASS] KPI target end dates: 0 invalid end dates; 0 end dates before start dates
+[PASS] Employee department IDs: 0 unmatched or missing values
+[PASS] Employee role IDs: 0 unmatched or missing values
+[PASS] Role department names: 0 unmatched or missing values
+[PASS] KPI department names: 0 unmatched or missing values
+[PASS] Target role IDs: 0 unmatched or missing values
+[PASS] Target KPI IDs: 0 unmatched or missing values
+[PASS] Performance employee IDs: 0 unmatched or missing values
+[PASS] Performance department IDs: 0 unmatched or missing values
+[PASS] Performance role IDs: 0 unmatched or missing values
+[PASS] Performance KPI IDs: 0 unmatched or missing values
+[PASS] Employee manager IDs: 0 references to unknown employees
+[PASS] Performance reporting months: 0 missing or invalid dates
+
+=======================================================
+Business checks passed: 25/25
+Business checks failed: 0
+
+=======================================================
+KPI ACHIEVEMENT RECONCILIATION
+Rows in dataset: 40,250
+Rows compared: 40,250
+Score mismatches: 0
+Rows not safely comparable: 0
+Achievement cap: 150.0%
+Allowed difference: 0.02 percentage points
+[PASS] KPI achievement reconciliation: 0 mismatches; 0 rows not safely comparable
+
+Execution time: 0.16 seconds
+
+Validation report saved: C:\Users\adity\Downloads\WorkforceIQ AI\reports\validation_20261012_200728_353502.json
+2026-10-12 20:07:28,439 | INFO | Structural and business validation stderr:
+2026-10-12 20:07:28,194 | INFO | ============================================================
+2026-10-12 20:07:28,194 | INFO | WorkforceIQ AI pipeline started
+2026-10-12 20:07:28,353 | INFO | Pipeline completed successfully
+2026-10-12 20:07:28,353 | INFO | ============================================================
+2026-10-12 20:07:28,439 | INFO | Structural and business validation PASSED
+2026-10-12 20:07:28,440 | INFO | ============================================================
+2026-10-12 20:07:28,440 | INFO | STARTING: Data quality summary
+2026-10-12 20:07:28,440 | INFO | Command: C:\Users\adity\AppData\Local\Programs\Python\Python313\python.exe "C:\Users\adity\Downloads\WorkforceIQ AI\data_quality_summary.py"
+2026-10-12 20:07:29,365 | INFO | Data quality summary stdout:
+
+=======================================================
+WORKFORCEIQ AI � DATA QUALITY SUMMARY
+=======================================================
+
+Dataset: departments
+Status: PASS
+Rows: 8
+Columns: 3
+Missing cells: 0
+Duplicate rows: 0
+Memory usage: 0.001 MB
+
+Dataset: roles
+Status: PASS
+Rows: 24
+Columns: 4
+Missing cells: 0
+Duplicate rows: 0
+Memory usage: 0.006 MB
+
+Dataset: kpi_definitions
+Status: PASS
+Rows: 40
+Columns: 8
+Missing cells: 0
+Duplicate rows: 0
+Memory usage: 0.016 MB
+
+Dataset: kpi_targets
+Status: PASS
+Rows: 120
+Columns: 8
+Missing cells: 120
+Duplicate rows: 0
+Memory usage: 0.035 MB
+Missing values by column:
+  effective_to: 120
+
+Dataset: employees
+Status: PASS
+Rows: 720
+Columns: 12
+Missing cells: 0
+Duplicate rows: 0
+Memory usage: 0.431 MB
+
+Dataset: performance_records
+Status: PASS
+Rows: 40,250
+Columns: 14
+Missing cells: 0
+Duplicate rows: 0
+Memory usage: 22.512 MB
+
+=======================================================
+Overall status: PASS
+Total rows: 41,162
+Total missing cells: 120
+Total duplicate rows: 0
+Report saved: C:\Users\adity\Downloads\WorkforceIQ AI\reports\data_quality_20261012_200729_281831.json
+2026-10-12 20:07:29,366 | INFO | Data quality summary PASSED
+2026-10-12 20:07:29,366 | INFO | ============================================================
+2026-10-12 20:07:29,366 | INFO | FINAL PIPELINE SUMMARY
+2026-10-12 20:07:29,366 | INFO | Structural and business validation: PASS
+2026-10-12 20:07:29,366 | INFO | Data quality summary: PASS
+2026-10-12 20:07:29,366 | INFO | Duration: 1.82 seconds
+2026-10-12 20:07:29,366 | INFO | Log file: C:\Users\adity\Downloads\WorkforceIQ AI\logs\orchestrator.log
+2026-10-12 20:07:29,366 | INFO | FINAL STATUS: SUCCESS

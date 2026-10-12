@@ -1,0 +1,51 @@
+{
+  "project": "WorkforceIQ AI",
+  "run_timestamp": "2026-10-12T20:03:46.905014+05:30",
+  "status": "FAIL",
+  "mode": "CSV validation only; MySQL not modified",
+  "datasets": {
+    "departments": {
+      "file": "departments.csv",
+      "rows": 0,
+      "columns": 0
+    },
+    "roles": {
+      "file": "roles.csv",
+      "rows": 0,
+      "columns": 0
+    },
+    "kpi_definitions": {
+      "file": "kpi_definitions.csv",
+      "rows": 0,
+      "columns": 0
+    },
+    "kpi_targets": {
+      "file": "kpi_targets.csv",
+      "rows": 0,
+      "columns": 0
+    },
+    "employees": {
+      "file": "employees.csv",
+      "rows": 0,
+      "columns": 0
+    },
+    "performance_records": {
+      "file": "performance_records_curated.csv",
+      "rows": 0,
+      "columns": 0
+    }
+  },
+  "total_rows_inspected": 0,
+  "business_checks": {
+    "passed": 0,
+    "failed": 0,
+    "total": 0
+  },
+  "kpi_reconciliation": {
+    "records_reconciled": 0,
+    "score_mismatches": 0,
+    "incomparable_records": 0
+  },
+  "duration_seconds": 0.001,
+  "error": "Safe mode: database loading is disabled. Run with --validate-only."
+}
